@@ -1,65 +1,111 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Biodata</title>
+    <title>My Portfolio</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
         body {
-            font-family: Arial;
-            background-color: #f4f4f4;
+            background: #0f172a;
+            color: white;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(135deg, #4f46e5, #9333ea);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             text-align: center;
         }
-        .container {
+
+        .hero h1 {
+            font-size: 40px;
+        }
+
+        .hero p {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #e0e7ff;
+        }
+
+        /* BUTTON */
+        .btn {
+            margin-top: 20px;
+            padding: 10px 20px;
             background: white;
+            color: #4f46e5;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* SECTION */
+        .section {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .card {
+            background: #1e293b;
+            margin: 20px auto;
             padding: 20px;
-            margin: 50px auto;
             width: 60%;
             border-radius: 10px;
-            box-shadow: 0px 0px 10px gray;
         }
-        img {
-            width: 150px;
-            border-radius: 50%;
+
+        h2 {
+            margin-bottom: 10px;
+            color: #38bdf8;
         }
+
         a {
+            color: #38bdf8;
             text-decoration: none;
-            color: blue;
         }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
+
     </style>
 </head>
+
 <body>
 
-<div class="container">
-    <h1>My Biodata</h1>
+<!-- HERO -->
+<div class="hero">
+    <h1>Shaik Khader Vali</h1>
+    <p>BCA Student | Presidency University</p>
+    <a href="#about" class="btn">View More</a>
+</div>
 
-    <img src="https://via.placeholder.com/150" alt="My Photo">
+<!-- ABOUT -->
+<div class="section" id="about">
+    <div class="card">
+        <h2>About Me</h2>
+        <p>I am a BCA student interested in web development, DevOps, and cloud technologies.</p>
+    </div>
 
-    <h2>Name: Shaik Khader Vali</h2>
-    <p>Course: BCA</p>
-    <p>University: Presidency University</p>
-    <p>Email: shaikkhadervali319@gmail.com</p>
+    <div class="card">
+        <h2>Skills</h2>
+        <p>Java | C | C++ | DevOps | AWS</p>
+    </div>
 
-    <h3>Skills</h3>
-    <ul>
-        <li>Java</li>
-        <li>C</li>
-        <li>C++</li>
-        <li>DevOps</li>
-        <li>AWS</li>
-    </ul>
+    <div class="card">
+        <h2>Projects</h2>
+        <p>Campus Navigation and Event Management System</p>
+        <p>ScholarSync – Research Paper Management System</p>
+    </div>
 
-    <h3>Projects</h3>
-    <p>Campus Navigation and Event Management System</p>
-    <p>ScholarSync – Research Paper Management System</p>
-
-    <h3>Links</h3>
-    <p>
-        <a href="https://github.com/">GitHub</a> |
-        <a href="https://linkedin.com/">LinkedIn</a>
-    </p>
+    <div class="card">
+        <h2>Contact</h2>
+        <p>Email: shaikkhadervali319@gmail.com</p>
+        <a href="#">GitHub</a> |
+        <a href="#">LinkedIn</a>
+    </div>
 </div>
 
 </body>
