@@ -126,18 +126,6 @@
       animation: fadeUp 0.6s ease both;
     }
 
-    /* Profile Image Style */
-    .hero-image {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 3px solid var(--accent);
-      box-shadow: 0 0 20px rgba(99, 210, 255, 0.2);
-      margin-bottom: 25px;
-      animation: fadeUp 0.6s ease both;
-    }
-
     .hero h1 {
       font-family: 'Syne', sans-serif;
       font-size: clamp(40px, 7vw, 88px);
@@ -525,8 +513,7 @@
     @media (max-width: 768px) {
       nav { padding: 16px 24px; }
       .nav-links { display: none; }
-      .hero { padding: 0 24px; align-items: flex-start; }
-      .hero-image { width: 120px; height: 120px; margin-top: 60px;} /* adjust mobile photo size */
+      .hero { padding: 0 24px; }
       section { padding: 70px 24px; }
       .about-grid { grid-template-columns: 1fr; gap: 36px; }
       .skills-grid { grid-template-columns: 1fr 1fr; }
@@ -538,6 +525,7 @@
 </head>
 <body>
 
+<!-- NAV -->
 <nav>
   <div class="nav-logo">SKV</div>
   <ul class="nav-links">
@@ -548,12 +536,12 @@
   </ul>
 </nav>
 
+<!-- HERO -->
 <div class="hero">
   <div class="blob blob-1"></div>
   <div class="blob blob-2"></div>
 
   <div class="hero-tag">Open to Internships & Collaborations</div>
-  <img src="profile.png" alt="Shaik Khader Vali" class="hero-image">
   <h1>Shaik<br><span>Khader Vali</span></h1>
   <p class="hero-sub">
     BCA student at Presidency University, Bengaluru — building for the web, the cloud, and beyond.
@@ -584,6 +572,7 @@
   </div>
 </div>
 
+<!-- ABOUT -->
 <section id="about">
   <div class="section-label reveal">01 — About</div>
   <div class="section-title reveal">Who I Am</div>
@@ -626,6 +615,7 @@
   </div>
 </section>
 
+<!-- SKILLS -->
 <section id="skills">
   <div class="section-label reveal">02 — Skills</div>
   <div class="section-title reveal">What I Work With</div>
@@ -700,6 +690,7 @@
   </div>
 </section>
 
+<!-- PROJECTS -->
 <section id="projects">
   <div class="section-label reveal">03 — Projects</div>
   <div class="section-title reveal">Things I've Built</div>
@@ -747,6 +738,7 @@
   </div>
 </section>
 
+<!-- CONTACT -->
 <section id="contact">
   <div class="section-label reveal">04 — Contact</div>
   <div class="section-title reveal">Let's Connect</div>
